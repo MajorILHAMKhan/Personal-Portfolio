@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilham Khan — Portfolio</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact info.">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="nav-inner">
+        <div class="brand">Ilham Khan</div>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <p class="small">Hello — I'm</p>
+          <h1>Ilham Khan<span style="color:var(--accent)">.</span></h1>
+          <p class="small">A passionate Computer Science graduate with expertise in frontend development and modern web technologies. I create user-friendly websites with clean design and smooth animations.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <img class="avatar" src="WhatsApp Image .png.jpeg" alt="Ilham Khan">
+          <div style="margin-top:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:700">Ilham Khan</div>
+                <div class="small">Computer Science Graduate</div>
+              </div>
+              <div class="small">Islamabad, Pakistan</div>
+            </div>
+            <p class="small" style="margin-top:10px">Open to work • Available for freelance</p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <div class="card">
+          <h2>About</h2>
+          <p class="small">I'm a passionate Computer Science graduate with a strong interest in frontend development and modern web technologies. I enjoy building user-friendly websites with clean design and smooth animations. I also have hands-on experience in office automation and computer operations, making me a well-rounded tech professional. With strong communication skills and a team-first attitude, I'm always ready to contribute and grow in dynamic environments.</p>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="projects" style="margin-top:12px">
+          <article class="project">
+            <h3>Responsive Web Applications</h3>
+            <p class="small">Built modern, responsive web applications with clean UI and smooth user experiences using HTML5, CSS3, and JavaScript.</p>
+            <div class="tags" style="margin-top:10px">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn btn-ghost" href="#">Live Demo</a>
+              <a class="btn btn-ghost" href="#">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Interactive Frontend Components</h3>
+            <p class="small">Developed interactive UI components with modern JavaScript libraries and frameworks, focusing on user experience and accessibility.</p>
+            <div class="tags" style="margin-top:10px">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn btn-ghost" href="#">Live Demo</a>
+              <a class="btn btn-ghost" href="#">Source Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Database Integration Projects</h3>
+            <p class="small">Created full-stack applications with database integration, implementing CRUD operations and data management systems.</p>
+            <div class="tags" style="margin-top:10px">
+              <span class="tag">MySQL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Database Design</span>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn btn-ghost" href="#">Live Demo</a>
+              <a class="btn btn-ghost" href="#">Source Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal">
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="skills" style="margin-top:10px">
+            <span class="skill">Frontend Development</span>
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">Database MySQL</span>
+            <span class="skill">Office Automation</span>
+            <span class="skill">Team Collaboration</span>
+            <span class="skill">AI Optimization</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="reveal">
+        <div class="row">
+          <div class="card" style="flex:1">
+            <h2>Resume</h2>
+            <p class="small">Download a copy of my resume to learn more about my experience and qualifications.</p>
+            <div style="margin-top:12px;display:flex;gap:10px">
+              <a class="btn" href="Ilham Khan21.pdf" download>Download Resume</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="card" style="width:320px">
+            <h3>Quick Info</h3>
+            <p class="small">Availability: Open to new opportunities</p>
+            <p class="small">Experience: Fresh Graduate with Projects</p>
+            <p class="small">Email: majorilhamraza@gmail.com</p>
+            <p class="small">Location: Islamabad, Punjab</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <div class="card">
+          <h2>Contact</h2>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input id="name" name="name" placeholder="Your name" required />
+            <input id="email" name="email" placeholder="Your email" type="email" required />
+            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+            <div style="display:flex;gap:8px">
+              <button type="submit" class="btn">Send Message</button>
+              <a class="btn btn-ghost" href="mailto:majorilhamraza@gmail.com">Email Me</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Ilham Khan — Built with HTML & CSS • <span class="small">Made for clarity & speed</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
